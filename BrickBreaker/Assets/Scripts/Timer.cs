@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour
         CurrentTime -= Time.deltaTime;
         minutes = (int)CurrentTime / 60;
         seconds = (int)CurrentTime % 60;
-        Debug.Log(minutes + ":" + seconds + "Time");
+     //   Debug.Log(minutes + ":" + seconds + "Time");
         if (CurrentTime <= 0.0f)
         {
             timerEnded();
