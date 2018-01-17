@@ -9,6 +9,8 @@ public class PaddleTest : MonoBehaviour {
     public List<Vector3> points;
     public List<GameObject> PointsObjects;
     public bool isMovingForward;
+
+    public Ball ball;
     private Vector3 StartPosition;
     void Start()
     {
@@ -21,9 +23,12 @@ public class PaddleTest : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
-        Movement();
-        RotationContoller();
+        if (ball.hasStarted == true)
+        {
+            Movement();
+            RotationContoller();
+        }
+       
 
         //if (points[0] == this.transform.position)
         //{

@@ -4,7 +4,7 @@ using System.Collections;
 public class Ball : MonoBehaviour {
 	
 	private Paddle paddle;
-	private bool hasStarted = false;
+	public bool hasStarted = false;
 	private Vector3 paddleToBallVector;
 
 	// Use this for initialization
@@ -20,7 +20,7 @@ public class Ball : MonoBehaviour {
 			this.transform.position = paddle.transform.position + paddleToBallVector;
 			
 			// Wait for a mouse press to launch.
-			if (Input.GetMouseButtonDown(0)) {
+			if (Input.GetMouseButtonDown(0)||Input.GetKeyDown(KeyCode.Space)) {
 				print ("Mouse clicked, launch ball");
 				hasStarted = true;
 				this.GetComponent<Rigidbody2D>().velocity = new Vector2 (2f, 10f);

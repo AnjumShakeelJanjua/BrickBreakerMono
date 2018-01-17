@@ -1926,6 +1926,7 @@ MonoBehaviour:
   points: []
   PointsObjects: []
   isMovingForward: 0
+  ball: {fileID: 1680041799}
 --- !u!4 &1537474581 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5b541298d30a8423d98a1a334f0ab5be, type: 2}
@@ -2090,6 +2091,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1680041799 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400000, guid: ff5536fe472d646e4945941b0dbdb7c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 617618547}
+  m_Script: {fileID: 11500000, guid: eeb6e60038577416f80a0d2c56032771, type: 3}
 --- !u!4 &1681580663 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 6985550d09b0244149a3dde12a556b31, type: 2}
